@@ -71,6 +71,7 @@ export default function Home() {
         onClick={handleGenerate} // Runs our story-making function
         disabled={loading} // Can't click while story is being generated
         style={{ marginBottom: "20px" }}
+        className="bg-sky-400 p-3 rounded-lg"
       >
         {loading ? "Generating..." : "Generate Story"}{" "}
         {/* Show loading text or button text */}
