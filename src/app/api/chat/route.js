@@ -37,7 +37,11 @@ export async function POST(req) {
     // Construct the prompt for the AI
     // The prompt is like a detailed instruction to a human writer:
     // "Write a short story (about 120 words) in this genre, with these characters"
-    const prompt = `Write a short story of about 120 words in the ${genre} genre featuring the following characters: ${characters.join(
+
+    //// Old Prompt
+    // const prompt = `Write a short story of about 120 words in the ${genre} genre featuring the following characters: ${characters.join(", ")}.`;
+    //// New Prompt
+    const prompt = `Write a 10-line poem in the ${genre} style using the characters: ${characters.join(
       ", "
     )}.`;
 
